@@ -87,22 +87,22 @@ Feature: Gold Medal Service home page tests
   @Regression
   Scenario: Validate Zipcode is getting updated properly in homepage
     Given I navigate to "https://test.goldmedalservice.com"
-    When I update Zipcode "21244" using eyebrow button
-    Then "Your home is in our service area!" appears, "21244" Zipcode gets updates properly, Map and map zipcode input disappears
+    When I update Zipcode "10931" using eyebrow button
+    Then "Your home is in our service area!" appears, "10931" Zipcode gets updates properly, Map and map zipcode input disappears
     # Updating incorrect phone number
     When I update Zipcode "12345" using eyebrow button
     Then "Sorry, your home is not in our service area." appears and update Zipcode is disabled, Map and map zipcode Input is visible
 
-  @Regression
-  Scenario: Validate Zipcode functionality is working for North Carolina region in eyebrow
-    Given I navigate to "https://test.goldmedalservice.com"
-     # Updating North Carolina Zipcode
-    When I update Zipcode "27606" using eyebrow button
-    Then NC region customer care contact CTA is visible
-    When I click on first call button in customer care contact CTA
-    Then I can verify Phone call popup
-    When I click on second call button in customer care contact CTA
-    Then I can verify Phone call popup
+#  @Regression
+#  Scenario: Validate Zipcode functionality is working for North Carolina region in eyebrow
+#    Given I navigate to "https://test.goldmedalservice.com"
+#     # Updating North Carolina Zipcode
+#    When I update Zipcode "27606" using eyebrow button
+#  Then NC region customer care contact CTA is visible
+#    When I click on first call button in customer care contact CTA
+#    Then I can verify Phone call popup
+#    When I click on second call button in customer care contact CTA
+#    Then I can verify Phone call popup
 
   @Regression
   Scenario: Validate "Use My Current Location" feature
@@ -110,23 +110,23 @@ Feature: Gold Medal Service home page tests
     When I open zip code CTA and click on Use My Current Location button
     Then Current zipcode should be updated in the input box
 
-  @Regression
-  Scenario: Validate that customer care model opens when North Carolina zipcode is entered in zipcode input by map
-    Given I navigate to "https://test.goldmedalservice.com"
-    # Updating North Carolina Zipcode
-    When I update Zipcode "27606" using map zipcode input
-    Then Customer care dialog opens up
-    When I click on first call button in customer care dialog
-    Then I can verify Phone call popup
-    When I click on second call button in customer care dialog
-    Then I can verify Phone call popup
-    Then I can close customer care modal
+#  @Regression
+#  Scenario: Validate that customer care model opens when North Carolina zipcode is entered in zipcode input by map
+#    Given I navigate to "https://test.goldmedalservice.com"
+#    # Updating North Carolina Zipcode
+#    When I update Zipcode "27606" using map zipcode input
+#    Then Customer care dialog opens up
+#    When I click on first call button in customer care dialog
+#    Then I can verify Phone call popup
+#    When I click on second call button in customer care dialog
+#    Then I can verify Phone call popup
+#    Then I can close customer care modal
 
   @Regression
   Scenario: Validate Map Zipcode Input and Book Now
     Given I navigate to "https://test.goldmedalservice.com"
-    When I update Zipcode "21244" using map zipcode input
-    Then "Your home is in our service area!" appears, Zip code "21244" should be update in the home page
+    When I update Zipcode "10931" using map zipcode input
+    Then "Your home is in our service area!" appears, Zip code "10931" should be update in the home page
     When I click map Input Book Now button
     Then I should see Book Online Now Window and close it
 

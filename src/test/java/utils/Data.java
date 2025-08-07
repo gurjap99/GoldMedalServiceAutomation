@@ -23,7 +23,7 @@ public class Data {
             "Quick Links", "Learn", "Financing", "Membership", "Offers & Rebates", "About Us", "Why Gold Medal", "Reviews",
             "Work With Us", "Contact Us"};
 
-    public static final String STATIC_PHONE_NUMBER = "1-800-642-4419";
+    public static final String STATIC_PHONE_NUMBER = "1-732-638-4317";
 
     public static final ArrayList<String> CATEGORY_LIST = new ArrayList<>(Arrays.asList("Heating & Cooling", "Plumbing",
             "Electrical", "Ways To Save", "About Us"));

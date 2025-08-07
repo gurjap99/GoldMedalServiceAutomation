@@ -60,9 +60,9 @@ public class HomePage {
     private WebElement offerCTABookNowButton;
     @FindBy(xpath = "(//span[contains(@id,'phoneNumber')])[4]")
     private WebElement offerCTAPhoneNumberButton;
-    @FindBy(xpath = "//div[./h2[contains(text(), 'For 37 years')]]//a[.//span[contains(text(), 'Book')]]")
+    @FindBy(xpath = "//div[./h2[contains(text(), 'than 30 years')]]//a[.//span[contains(text(), 'Book')]]")
     private WebElement imageBookNowButton;
-    @FindBy(xpath = "//div[./h2[contains(text(), 'For 37 years')]]//a[.//span[contains(@id,'phoneNumber')]]")
+    @FindBy(xpath = "//div[./h2[contains(text(), 'than 30 years')]]//a[.//span[contains(@id,'phoneNumber')]]")
     private WebElement imagePhoneNumberButton;
     @FindBy(xpath = "(//*[name()='svg']//*[local-name()='path' and @class='fill-primary'])[2]")
     private WebElement offerBannerPlusIcon;

@@ -1,0 +1,180 @@
+Feature: Gold Medal Service Heating & Cooling Overview Page tests
+
+  @Smoke
+  Scenario: Validate list of services in Overview of Heating & Cooling
+    Given I navigate to "https://test.goldmedalservice.com"
+    When I Click on Heating & Cooling
+    When I click on Overview button in "Heating & Cooling" header submenu
+    Then I can validate the list of all "Heating & Cooling" services and their order
+
+  @Regression
+  Scenario: Validate Heating Maintenance of Heating & Cooling services CTA
+    Given I navigate to "https://test.goldmedalservice.com"
+    When I Click on Heating & Cooling
+    When I click on Overview button in "Heating & Cooling" header submenu
+    When I click on "Heating & Cooling" "Heating Maintenance"
+    Then "Heating Maintenance" CTA opens and Book now button can be clicked
+    Then I should see Book Online Now Window and close it
+    When "Heating Maintenance" Phone number button in CTA is clicked
+    Then I can verify Phone call popup
+    When I click on "Heating Maintenance" Learn More button
+    Then it navigates to "https://test.goldmedalservice.com/heating-and-cooling-services/heating-maintenance"
+
+  @Regression
+  Scenario: Validate Heating Repair of Heating & Cooling services CTA
+    Given I navigate to "https://test.goldmedalservice.com"
+    When I Click on Heating & Cooling
+    When I click on Overview button in "Heating & Cooling" header submenu
+    When I click on "Heating & Cooling" "Heating Repair"
+    Then "Heating Repair" CTA opens and Book now button can be clicked
+    Then I should see Book Online Now Window and close it
+    When "Heating Repair" Phone number button in CTA is clicked
+    Then I can verify Phone call popup
+    When I click on "Heating Repair" Learn More button
+    Then it navigates to "https://test.goldmedalservice.com/heating-and-cooling-services/heating-repair"
+
+  @Regression
+  Scenario: Validate Heating Installation of Heating & Cooling services CTA
+    Given I navigate to "https://test.goldmedalservice.com"
+    When I Click on Heating & Cooling
+    When I click on Overview button in "Heating & Cooling" header submenu
+    When I click on "Heating & Cooling" "Heating Installation"
+    Then "Heating Installation" CTA opens and Book now button can be clicked
+    Then I should see Book Online Now Window and close it
+    When "Heating Installation" Phone number button in CTA is clicked
+    Then I can verify Phone call popup
+    When I click on "Heating Installation" Learn More button
+    Then it navigates to "https://test.goldmedalservice.com/heating-and-cooling-services/heating-installation"
+
+  @Regression
+  Scenario: Validate AC Maintenance of Heating & Cooling services CTA
+    Given I navigate to "https://test.goldmedalservice.com"
+    When I Click on Heating & Cooling
+    When I click on Overview button in "Heating & Cooling" header submenu
+    When I click on "Heating & Cooling" "AC Maintenance"
+    Then "AC Maintenance" CTA opens and Book now button can be clicked
+    Then I should see Book Online Now Window and close it
+    When "AC Maintenance" Phone number button in CTA is clicked
+    Then I can verify Phone call popup
+    When I click on "AC Maintenance" Learn More button
+    Then it navigates to "https://test.goldmedalservice.com/heating-and-cooling-services/ac-maintenance"
+
+  @Regression
+  Scenario: Validate AC Repair of Heating & Cooling services CTA
+    Given I navigate to "https://test.goldmedalservice.com"
+    When I Click on Heating & Cooling
+    When I click on Overview button in "Heating & Cooling" header submenu
+    When I click on "Heating & Cooling" "AC Repair"
+    Then "AC Repair" CTA opens and Book now button can be clicked
+    Then I should see Book Online Now Window and close it
+    When "AC Repair" Phone number button in CTA is clicked
+    Then I can verify Phone call popup
+    When I click on "AC Repair" Learn More button
+    Then it navigates to "https://test.goldmedalservice.com/heating-and-cooling-services/ac-repair"
+
+  @Regression
+  Scenario: Validate AC Installation of Heating & Cooling services CTA
+    Given I navigate to "https://test.goldmedalservice.com"
+    When I Click on Heating & Cooling
+    When I click on Overview button in "Heating & Cooling" header submenu
+    When I click on "Heating & Cooling" "AC Installation"
+    Then "AC Installation" CTA opens and Book now button can be clicked
+    Then I should see Book Online Now Window and close it
+    When "AC Installation" Phone number button in CTA is clicked
+    Then I can verify Phone call popup
+    When I click on "AC Installation" Learn More button
+    Then it navigates to "https://test.goldmedalservice.com/heating-and-cooling-services/ac-installation"
+
+  @Regression
+  Scenario: Validate Ductless Mini-Splits of Heating & Cooling services CTA
+    Given I navigate to "https://test.goldmedalservice.com"
+    When I Click on Heating & Cooling
+    When I click on Overview button in "Heating & Cooling" header submenu
+    When I click on "Heating & Cooling" "Ductless Mini-Splits"
+    Then "Ductless Mini-Splits" CTA opens and Book now button can be clicked
+    Then I should see Book Online Now Window and close it
+    When "Ductless Mini-Splits" Phone number button in CTA is clicked
+    Then I can verify Phone call popup
+    When I click on "Ductless Mini-Splits" Learn More button
+    Then it navigates to "https://test.goldmedalservice.com/heating-and-cooling/ductless-mini-splits"
+
+  @Regression
+  Scenario: Validate HVAC Accessories of Heating & Cooling services CTA
+    Given I navigate to "https://test.goldmedalservice.com"
+    When I Click on Heating & Cooling
+    When I click on Overview button in "Heating & Cooling" header submenu
+    When I click on "Heating & Cooling" "HVAC Accessories"
+    Then "HVAC Accessories" CTA opens and Book now button can be clicked
+    Then I should see Book Online Now Window and close it
+    When "HVAC Accessories" Phone number button in CTA is clicked
+    Then I can verify Phone call popup
+    When I click on "HVAC Accessories" Learn More button
+    Then it navigates to "https://test.goldmedalservice.com/heating-and-cooling/hvac-accessories"
+
+  @Regression
+  Scenario: Validate Indoor Air Quality of Heating & Cooling services CTA
+    Given I navigate to "https://test.goldmedalservice.com"
+    When I Click on Heating & Cooling
+    When I click on Overview button in "Heating & Cooling" header submenu
+    When I click on "Heating & Cooling" "Indoor Air Quality"
+    Then "Indoor Air Quality" CTA opens and Book now button can be clicked
+    Then I should see Book Online Now Window and close it
+    When "Indoor Air Quality" Phone number button in CTA is clicked
+    Then I can verify Phone call popup
+    When I click on "Indoor Air Quality" Learn More button
+    Then it navigates to "https://test.goldmedalservice.com/heating-and-cooling-services/indoor-air-quality"
+
+  @Smoke
+  Scenario: Validating Heating & Cooling Offer available at bottom of overview page
+    Given I navigate to "https://test.goldmedalservice.com/"
+    When I Click on Heating & Cooling
+    When I click on Overview button in "Heating & Cooling" header submenu
+    And I go to bottom of the homepage
+    When I should be able to click on each offer details link and validate CTA
+    And I click on View All Offers & Rebates button
+    Then it navigates to "https://test.goldmedalservice.com/ways-to-save/offers-and-rebates"
+
+  @Smoke
+  Scenario: Validating Google Review on Heating & Cooling overview page
+    Given I navigate to "https://test.goldmedalservice.com/"
+    When I Click on Heating & Cooling
+    When I click on Overview button in "Heating & Cooling" header submenu
+    Then I should see Google review in the home page
+
+  @Regression
+  Scenario: Validate Image Call and Book Now buttons on Heating & Cooling overview page
+    Given I navigate to "https://test.goldmedalservice.com/"
+    When I Click on Heating & Cooling
+    When I click on Overview button in "Heating & Cooling" header submenu
+    When I click on Book Now button in Image on "Gold Medal Service heating and cooling" Page
+    Then I should see Book Online Now Window and close it
+    When I click on Phone Number in Image on "Gold Medal Service heating and cooling" Page
+    Then I can verify Phone call popup
+
+  @Smoke
+  Scenario: Validate Maintenance Repair and Installation Services at bottom of overview page
+    Given I navigate to "https://test.goldmedalservice.com/"
+    When I Click on Heating & Cooling
+    And I click on Overview button in "Heating & Cooling" header submenu
+    And I click on "Heating" in "Maintenance"
+    Then it navigates to "https://test.goldmedalservice.com/heating-and-cooling-services/heating-maintenance"
+    When I Click on Heating & Cooling
+    And I click on Overview button in "Heating & Cooling" header submenu
+    And I click on "Cooling" in "Maintenance"
+    Then it navigates to "https://test.goldmedalservice.com/heating-and-cooling-services/ac-maintenance"
+    When I Click on Heating & Cooling
+    And I click on Overview button in "Heating & Cooling" header submenu
+    And I click on "Heating" in "Repair"
+    Then it navigates to "https://test.goldmedalservice.com/heating-and-cooling-services/heating-repair"
+    When I Click on Heating & Cooling
+    And I click on Overview button in "Heating & Cooling" header submenu
+    And I click on "Cooling" in "Repair"
+    Then it navigates to "https://test.goldmedalservice.com/heating-and-cooling-services/ac-repair"
+    When I Click on Heating & Cooling
+    And I click on Overview button in "Heating & Cooling" header submenu
+    And I click on "Heating" in "Installation"
+    Then it navigates to "https://test.goldmedalservice.com/heating-and-cooling-services/heating-installation"
+    When I Click on Heating & Cooling
+    And I click on Overview button in "Heating & Cooling" header submenu
+    And I click on "Cooling" in "Installation"
+    Then it navigates to "https://test.goldmedalservice.com/heating-and-cooling-services/ac-installation"
